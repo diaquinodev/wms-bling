@@ -1,0 +1,7 @@
+node_modules/
+.env
+tokens.json
+.wwebjs_auth/
+.wwebjs_cache/
+*.zip
+.DS_Store
