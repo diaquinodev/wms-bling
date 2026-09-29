@@ -2,6 +2,7 @@
 
 ### Gestão de estoque, conferência de pedidos e alertas automáticos para uma loja de moda omnichannel
 
+[![CI](https://github.com/diaquinodev/AJ-DASHBOARD/actions/workflows/ci.yml/badge.svg)](https://github.com/diaquinodev/AJ-DASHBOARD/actions/workflows/ci.yml)
 [![Node.js](https://img.shields.io/badge/Node.js-20.12+-339933?logo=nodedotjs&logoColor=white)](package.json)
 [![Express](https://img.shields.io/badge/Express-5-000000?logo=express&logoColor=white)](index.js)
 [![Bling API v3](https://img.shields.io/badge/ERP-Bling%20API%20v3-2E7D32)](https://developer.bling.com.br/)
@@ -87,17 +88,28 @@ Painéis: `http://localhost:3000/dashboard.html` · `/checkout.html` · `/wms.ht
 - Previsão de demanda por SKU para disparar o alerta **antes** de o estoque zerar.
 - Autenticação nos painéis e deploy como serviço.
 
+## 🧪 Testes
+
+```bash
+npm test
+```
+
+Usa o test runner nativo do Node (`node --test`), sem dependências extras. Os testes cobrem as regras puras do robô de alertas ([`alertas.js`](alertas.js)): filtro de produtos em risco, referências ignoradas e formatação da mensagem. Rodam sem Bling e sem WhatsApp e também executam no CI (Node 20 e 22).
+
 ## 📁 Estrutura
 
 ```
-├── index.js               # Servidor, integração Bling, checkout, WMS e robô de alertas
+├── index.js               # Servidor, integração Bling, checkout, WMS e agendamento do robô de alertas
+├── alertas.js             # Regras puras do robô de alertas (filtro e mensagem), com testes
 ├── gerar.js               # Gera tokens.json a partir do código de autorização OAuth
 ├── listar-ids.js          # Descobre IDs de loja e vendedor a partir de um pedido
+├── test/alertas.test.js   # Testes (node --test)
 ├── dashboard.html         # Painel de estoque
 ├── checkout.html          # Conferência de pedidos
 ├── wms.html               # Entrada e saída de estoque
 ├── Instalar_Sistema.bat   # Instalador para Windows
 ├── Iniciar_Sistema.bat    # Inicialização para Windows
+├── .github/workflows/ci.yml  # CI: npm test em Node 20 e 22
 └── .env.example           # Variáveis necessárias
 ```
 
