@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "auth": "node gerar.js"
+    "auth": "node gerar.js",
+    "test": "node --test"
   },
   "engines": {
     "node": ">=20.12"
