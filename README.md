@@ -2,7 +2,7 @@
 
 ### Gestão de estoque, conferência de pedidos e alertas automáticos para uma loja de moda omnichannel
 
-[![CI](https://github.com/diaquinodev/AJ-DASHBOARD/actions/workflows/ci.yml/badge.svg)](https://github.com/diaquinodev/AJ-DASHBOARD/actions/workflows/ci.yml)
+[![CI](https://github.com/diaquinodev/wms-bling/actions/workflows/ci.yml/badge.svg)](https://github.com/diaquinodev/wms-bling/actions/workflows/ci.yml)
 [![Node.js](https://img.shields.io/badge/Node.js-20.12+-339933?logo=nodedotjs&logoColor=white)](package.json)
 [![Express](https://img.shields.io/badge/Express-5-000000?logo=express&logoColor=white)](index.js)
 [![Bling API v3](https://img.shields.io/badge/ERP-Bling%20API%20v3-2E7D32)](https://developer.bling.com.br/)
