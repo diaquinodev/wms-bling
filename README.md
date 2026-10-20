@@ -1,5 +1,7 @@
 # 📦 WMS de Estoque com Bling + Alertas no WhatsApp
 
+> Projeto de portfólio baseado em um problema real de operação. Credenciais, produtos e pedidos deste repositório são fictícios.
+
 ### Gestão de estoque, conferência de pedidos e alertas automáticos para uma loja de moda omnichannel
 
 [![CI](https://github.com/diaquinodev/wms-bling/actions/workflows/ci.yml/badge.svg)](https://github.com/diaquinodev/wms-bling/actions/workflows/ci.yml)
